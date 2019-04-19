@@ -1,0 +1,92 @@
+<!-- Site wrapper -->
+<div class="wrapper">
+  <header class="main-header">
+    <a href="javascript:;" routerLink="/" class="logo">
+      <!-- Logo -->
+      <span class="logo-mini">
+        <img src="../assets/dist/img/mini-logo.png" alt="">
+      </span>
+      <span class="logo-lg">
+        <img src="../assets/dist/img/logo.png" alt="">
+      </span>
+    </a>
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top">
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <!-- Sidebar toggle button-->
+        <span class="sr-only">Toggle navigation</span>
+        <span class="pe-7s-angle-left-circle"></span>
+      </a>
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- user -->
+          <li class="dropdown dropdown-user">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../assets/dist/img/avatar5.png" class="img-circle" width="45" height="45" alt="user">
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="login.html">
+                  <i class="fa fa-sign-out"></i> Sair
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- =============================================== -->
+  <!-- Left side column. contains the sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar -->
+    <div class="sidebar">
+      <!-- sidebar menu -->
+      <ul class="sidebar-menu">
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-users"></i><span>Clientes</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="javascript:;" routerLink="/Cliente">Listar</a></li>
+          </ul>
+        </li>
+        <li class="active">
+          <a href="javascript:;" routerLink="/">
+            <i class="fa fa-file-text"></i><span>Documentação</span>
+            <span class="pull-right-container">
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+  <!-- =============================================== -->
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="header-icon">
+        <i class="fa fa-users"></i>
+      </div>
+      <div class="header-title">
+        <h1>Clientes</h1>
+        <small>Listagem de Clientes.</small>
+      </div>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+      <router-outlet></router-outlet>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2019 <a target="_blank" href="https://direct.one">Direct.One</a>.</strong> Todos os direitos reservados.
+  </footer>
+</div>
+<!-- /.wrapper -->

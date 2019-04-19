@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DevChallenge.CrossCutting.Extension\DevChallenge.CrossCutting.Extension.csproj" />
+    <ProjectReference Include="..\DevChallenge.Domain\DevChallenge.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,140 @@
+<div class="row">
+  <!-- Form controls -->
+  <div class="col-sm-12">
+    <div class="panel panel-bd lobidrag">
+      <div class="panel-heading">
+        <div class="btn-group" id="buttonexport">
+          <a href="javascript:;">
+            <h4>Adicionar Cliente</h4>
+          </a>
+        </div>
+      </div>
+      <div class="panel-body">
+        <form [formGroup]="cadastroCliente" (submit)="salvar()">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Nome</label>
+                <input type="text" class="form-control" placeholder="Informe o Nome" formControlName="nome" required>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Cpf</label>
+                <input type="text" mask='000.000.000-00' class="form-control" formControlName="cpf" placeholder="Informe o Cpf" required>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Rg</label>
+                <input type="email" mask='00.000.000-0' class="form-control" formControlName="rg" placeholder="Informe o Rg" required>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Data de Nascimento</label>
+                <input type="date" class="form-control" formControlName="dataNascimento" placeholder="Informe a Data de Nascimento" required>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Facebook</label>
+                <input type="text" class="form-control" formControlName="facebook" placeholder="Informe o link do Facebook" required> 
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Linkedin</label>
+                <input type="text" class="form-control" formControlName="linkedin" placeholder="Informe o link do Linkedin" required>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Instagram</label>
+                <input type="text" class="form-control" formControlName="instagram" placeholder="Informe o link do Instagram" required>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Twitter</label>
+                <input type="text" class="form-control" formControlName="twitter" placeholder="Informe o link do Twitter" required>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <h4>Endereço</h4>
+          <div formGroupName="endereco">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Cep</label>
+                  <input (change)="buscarCep()" mask="00000-000" type="text" class="form-control" formControlName="cep" placeholder="Informe o Cep" required>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Logradouro</label>
+                  <input type="text" class="form-control" formControlName="logradouro" placeholder="Informe o Logradouro" required>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Número</label>
+                  <input type="text" class="form-control" formControlName="numero" placeholder="Informe o Número" required>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Bairro</label>
+                  <input type="text" class="form-control" formControlName="bairro" placeholder="Informe o Bairro" required>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Cidade</label>
+                  <input type="text" class="form-control" formControlName="cidade" placeholder="Informe o Cidade" required>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Estado</label>
+                  <input type="text" class="form-control" formControlName="estado" placeholder="Informe o Estado" required>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <h4>Telefones</h4>
+          <div class="row" formGroupName="telefone">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Telefone Residêncial</label>
+                <input type="text" class="form-control" mask="(00)0000-0000" formControlName="residencial" placeholder="Informe o Telefone Residêncial" required>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Telefone Celular</label>
+                <input type="text" class="form-control" mask="(00)0-0000-0000" formControlName="celular" placeholder="Informe o Telefone Celular" required>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="reset-button" style="float: right">
+                <a style="margin-right: 5px" href="javascript:;" routerLink="/Cliente" class="btn btn-warning"><i class="fa fa-arrow-left"></i> Voltar</a>
+                <button type="submit" href="#" class="btn btn-success"><i class="fa fa-check"></i> Salvar</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

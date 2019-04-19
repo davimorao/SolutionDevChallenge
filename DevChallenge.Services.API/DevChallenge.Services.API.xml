@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevChallenge.Services.API</name>
+    </assembly>
+    <members>
+        <member name="T:DevChallenge.Services.API.Controllers.ClienteController">
+            <summary>
+            Api de Cliente.
+            </summary>
+        </member>
+        <member name="M:DevChallenge.Services.API.Controllers.ClienteController.#ctor(DevChallenge.Application.Interfaces.IClienteAppService)">
+            <summary>
+            Construtor com injeção de dependências.
+            </summary>
+            <param name="clienteAppService">Injeção de IClienteAppService.</param>
+        </member>
+        <member name="M:DevChallenge.Services.API.Controllers.ClienteController.Get">
+            <summary>
+            Lista Cliente.
+            </summary>
+            <returns>Lista de Clientes.</returns>
+        </member>
+        <member name="M:DevChallenge.Services.API.Controllers.ClienteController.Get(System.Int32)">
+            <summary>
+            Lista Cliente por Id.
+            </summary>
+            <param name="id">Id do Cliente.</param>
+            <returns>Cliente.</returns>
+        </member>
+        <member name="M:DevChallenge.Services.API.Controllers.ClienteController.GetByName(System.String,System.String,System.String)">
+            <summary>
+            Lista Cliente por nome.
+            </summary>
+            <param name="nome">Nome do Cliente.</param>
+            <param name="cpf">Cpf do Cliente.</param>
+            <param name="rg">Rg do Cliente.</param>
+            <returns>Lista de Clientes.</returns>
+        </member>
+        <member name="M:DevChallenge.Services.API.Controllers.ClienteController.Post(DevChallenge.Application.ViewModels.ClienteViewModel)">
+            <summary>
+            Adiciona um novo Cliente.
+            </summary>
+            <param name="value">Dados do novo Cliente.</param>
+            <returns>Id do Cliente adicionado.</returns>
+        </member>
+        <member name="M:DevChallenge.Services.API.Controllers.ClienteController.Put(System.Int32,DevChallenge.Application.ViewModels.ClienteViewModel)">
+            <summary>
+            Edita um Cliente.
+            </summary>
+            <param name="id">Id do Cliente.</param>
+            <param name="value">Dados que serão editados.</param>
+            <returns>Id do Cliente editado.</returns>
+        </member>
+        <member name="M:DevChallenge.Services.API.Controllers.ClienteController.Delete(System.Int32)">
+            <summary>
+            Exclui um Cliente.
+            </summary>
+            <param name="id">Id do Cliente.</param>
+            <returns>Id do Cliente excluído.</returns>
+        </member>
+        <member name="T:DevChallenge.Services.API.Controllers.EnderecoController">
+            <summary>
+            Api de Endereço.
+            </summary>
+        </member>
+        <member name="M:DevChallenge.Services.API.Controllers.EnderecoController.#ctor(DevChallenge.Application.Interfaces.IEnderecoAppService)">
+            <summary>
+            Construtor com injeção de dependências.
+            </summary>
+            <param name="enderecoAppService">Injeção de dependência de IEnderecoAppService.</param>
+        </member>
+        <member name="M:DevChallenge.Services.API.Controllers.EnderecoController.Get">
+            <summary>
+            Lista Endereço.
+            </summary>
+            <returns>Lista de Endereços.</returns>
+        </member>
+        <member name="M:DevChallenge.Services.API.Controllers.EnderecoController.Get(System.Int32)">
+            <summary>
+            Lista Endereço por Id.
+            </summary>
+            <param name="id">Id do Endereço.</param>
+            <returns>Endereço.</returns>
+        </member>
+        <member name="M:DevChallenge.Services.API.Controllers.EnderecoController.Post(DevChallenge.Application.ViewModels.EnderecoViewModel)">
+            <summary>
+            Adiciona um novo Endereço.
+            </summary>
+            <param name="value">Dados do novo Endereço.</param>
+            <returns>Id do Endereço adicionado.</returns>
+        </member>
+        <member name="M:DevChallenge.Services.API.Controllers.EnderecoController.Put(System.Int32,DevChallenge.Application.ViewModels.EnderecoViewModel)">
+            <summary>
+            Edita um Endereço.
+            </summary>
+            <param name="id">Id do Endereço.</param>
+            <param name="value">Dados que serão editados.</param>
+            <returns>Id do Endereço editado.</returns>
+        </member>
+        <member name="M:DevChallenge.Services.API.Controllers.EnderecoController.Delete(System.Int32)">
+            <summary>
+            Exclui um Endereço.
+            </summary>
+            <param name="id">Id do Endereço.</param>
+            <returns>Id do Cliente excluído.</returns>
+        </member>
+        <member name="T:DevChallenge.Services.API.Controllers.TelefoneController">
+            <summary>
+            Api de Telefone.
+            </summary>
+        </member>
+        <member name="M:DevChallenge.Services.API.Controllers.TelefoneController.#ctor(DevChallenge.Application.Interfaces.ITelefoneAppService)">
+            <summary>
+            Construtor com injeção de dependências.
+            </summary>
+            <param name="telefoneAppService">Injeção de ITelefoneAppService.</param>
+        </member>
+        <member name="M:DevChallenge.Services.API.Controllers.TelefoneController.Get">
+            <summary>
+            Lista Telefone.
+            </summary>
+            <returns>Lista Telefone.</returns>
+        </member>
+        <member name="M:DevChallenge.Services.API.Controllers.TelefoneController.Get(System.Int32)">
+            <summary>
+            Lista Telefone por Id.
+            </summary>
+            <param name="id">Id do Telefone.</param>
+            <returns>Telefone.</returns>
+        </member>
+        <member name="M:DevChallenge.Services.API.Controllers.TelefoneController.Post(DevChallenge.Application.ViewModels.TelefoneViewModel)">
+            <summary>
+            Adiciona um novo Telefone.
+            </summary>
+            <param name="value">Dados do novo Telefone.</param>
+            <returns>Id do Telefone adicionado.</returns>
+        </member>
+        <member name="M:DevChallenge.Services.API.Controllers.TelefoneController.Put(System.Int32,DevChallenge.Application.ViewModels.TelefoneViewModel)">
+            <summary>
+            Edita um Telefone.
+            </summary>
+            <param name="id">Id do Telefone.</param>
+            <param name="value">Dados que serão editados.</param>
+            <returns>Id do Telefone editado.</returns>
+        </member>
+        <member name="M:DevChallenge.Services.API.Controllers.TelefoneController.Delete(System.Int32)">
+            <summary>
+            Exclui um Telefone.
+            </summary>
+            <param name="id">Id do Telefone.</param>
+            <returns>Dados que serão editados.</returns>
+        </member>
+    </members>
+</doc>
