@@ -12,11 +12,11 @@ import { ClientePesquisaComponent } from './component/cliente/cliente-pesquisa/c
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
-import { NgxMaskModule } from 'ngx-mask'
+import { NgxMaskModule } from 'ngx-mask';
 
 @NgModule({
   declarations: [
-    AppComponent, 
+    AppComponent,
     ClienteCadastroComponent,
     ClientePesquisaComponent
   ],
